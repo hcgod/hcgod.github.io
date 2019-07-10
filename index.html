@@ -187,7 +187,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Cambiar a barra de navegación">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -214,7 +214,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Inicio</a>
 
   </li>
         
@@ -230,7 +230,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archivo</a>
 
   </li>
 
@@ -320,14 +320,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Publicado el</span>
               
 
               
                 
               
 
-              <time title="Erstellt: 2019-07-10 11:15:46 / Geändert am: 11:35:39" itemprop="dateCreated datePublished" datetime="2019-07-10T11:15:46+08:00">2019-07-10</time>
+              <time title="Creado por: 2019-07-10 11:15:46 / Modificado por: 12:47:36" itemprop="dateCreated datePublished" datetime="2019-07-10T11:15:46+08:00">2019-07-10</time>
             </span>
           
 
@@ -371,7 +371,26 @@
       
         
           
-            <h2 id="小白的hexo-github博客之旅"><a href="#小白的hexo-github博客之旅" class="headerlink" title="小白的hexo+github博客之旅"></a>小白的hexo+github博客之旅</h2>
+            <h4 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h4><p>最近一直在学习关于如何做海外的B2B去平台化品牌营销。 后来发现现在网上的信息都太少了，更多的是关于电商B2C的，所以自己决定写个博客，把自己的这些实操经验都记录下来，就想到了博客。</p>
+<h4 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h4><p>– 第一，记录自己的操作经验<br>– 第二，找回写作的习惯（PS: 曾经自己是有习惯写作的，那个时候写空间，都是关于自己的。）<br>– 第三，为B2B去平台化的海外营销做个操作范例。</p>
+<h4 id="纠结"><a href="#纠结" class="headerlink" title="纠结"></a>纠结</h4><p>好吧，这就开动吧。想到要写博客，首先想到的是wordpress，这些年自己操作了不少的建站都是基于WordPress写的，相对比较熟悉。然后，我需要一个VPS，一个域名，后来左思右想不舍得去投入VPS就放弃了。便宜的稳定性差，稳定性好的价格太贵。加上以前很多次失败的教训，告诉我再没有绝对的把握之前就采购这些资产显然是不明智的。<br>后来在网上看到有人在介绍hexo+github的方法，本不想跟进的，但是实在没法找到一个方案可以解决我的问题。就抱着试一试的心态开始了hexo+github的建站之路。 </p>
+<h4 id="开动"><a href="#开动" class="headerlink" title="开动"></a>开动</h4><p>首先，感谢[<a href="https://www.zhihu.com/people/wurun" target="_blank" rel="noopener">吴润</a>]的知乎文章，<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">GitHub+Hexo 搭建个人网站详细教程</a>。<br>其次，本次搭建过程中也遇到一些问题在以上文章中并没有提到，这里就说说那些对我这个小白造成阻碍的问题。</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">文中提到： Hexo就是我们的个人博客网站的框架， 这里需要自己在电脑常里创建一个文件夹，可以命名为Blog</a>, 如果你这里建立了blog文件夹后安装hexo，然后在继续在该文件夹出初始化blog<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>，会在该文件夹继续生产一个 blog文件夹。后续的hexo命令操作一定要到新的文件夹里面执行。<br>也就是，之前是比如我的，在初始化前是C:\Users\RYZEN\blog， hexo程序初始化后就要到新的blog文件夹执行hexo命令。例如： C:\Users\RYZEN\blog\blog&gt;hexo s</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">文中提到: GitHub创建个人仓库，仓库名要用固定写法:用户名.github.io</a>, 这里补充一点， 一个github账户，只能对应一个hexo网站，如果想要通过新建仓库的方式来新建网站是行不通的。</li>
+</ul>
+<p>这样，网站就建好了。整体上没什么大的问题。</p>
+<p>但是，建好后，我是非常不喜欢这个landscape的主题。于是就换个主题呗。 next，最好的选择。<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
+<p>新的问题出现<strong>BOOM!</strong><br>git clone的速度太慢，尝试了<a href="https://www.zhihu.com/question/27159393" target="_blank" rel="noopener">汪小九</a>的proxy修改方案，不行， 要报错， Proxy CONNECT aborted.  找了一堆解决方案，都不行。<br>最后还是决绝了<br>用的是知乎网友<a href="https://www.zhihu.com/question/27159393" target="_blank" rel="noopener">风木草</a>的 方法，该评论就在汪小九方法的下面。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global http.postBuffer 524288000</span><br></pre></td></tr></table></figure>
+
+<p>就这样，完美收工。 </p>
+
           
         
       
@@ -465,14 +484,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Publicado el</span>
               
 
               
                 
               
 
-              <time title="Erstellt: 2019-07-09 16:36:21" itemprop="dateCreated datePublished" datetime="2019-07-09T16:36:21+08:00">2019-07-09</time>
+              <time title="Creado por: 2019-07-09 16:36:21" itemprop="dateCreated datePublished" datetime="2019-07-09T16:36:21+08:00">2019-07-09</time>
             </span>
           
 
@@ -609,7 +628,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-name">entradas</span>
                   </a>
                 </div>
               
@@ -628,7 +647,7 @@
                       
                     
                     <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">schlagwörter</span>
+                    <span class="site-state-item-name">tags</span>
                   
                 </div>
               
@@ -681,7 +700,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <div class="powered-by">Creado mediante <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
 
 
 
@@ -689,7 +708,7 @@
 
 
 
-  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
+  <div class="theme-info">Tema – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.2.0</div>
 
 
 
